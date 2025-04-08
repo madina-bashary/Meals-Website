@@ -1,12 +1,17 @@
 {
+  
   "name": "foodies",
   "version": "0.1.0",
   "private": true,
+
+  "homepage": "https://github.com/madina-bashary/Meals-Website",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "next build",          
+    "start": "next start",        
+    "export": "next export",    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"   
   },
   "dependencies": {
     "better-sqlite3": "^11.9.1",
@@ -19,6 +24,7 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.3"
+    "eslint-config-next": "14.0.3",
+    "gh-pages": "^6.3.0"
   }
 }
